@@ -31,35 +31,46 @@
 <body>
     <h1>IT Academy - exercici 8 (calculadora) de JS</h1>
     <p>Nivell 1:</p>    
-    <div class="tooltip">Entrar 2 valors, i tambe la operacio desitjada.
+    <div class="tooltip"> &nbsp;&nbsp;&nbsp; Entrar 2 valors, i tambe la operacio desitjada.
         <span class="tooltiptext">suma, resta, multi, divi</span>
     </div> 
     <br>
     <br>
     <div id=form>
-        <label for="spnPrimer">Seleccina un numero (entre 0 i 99):</label>
+        <label for="spnPrimer"> &nbsp; Seleccina un numero (entre 0 i 99):</label>
         <input type="number" id="spnPrimer" name="spnPrimer" min="0" max="99">
         <br><br>
-        <label for="spnSegon">Seleccina un numero (entre 0 i 99):</label>
+        <label for="spnSegon"> &nbsp; Seleccina un numero (entre 0 i 99):</label>
         <input type="number" id="spnSegon" name="spnSegon" min="0" max="99">
         <br><br>
-        <!-- RADIO BUTTONS -->
-        <input type="radio" id="radSuma" name="radSuma" value="+">
+    <!-- RADIO BUTTONS -->
+        <!-- Atenció, cal posar el MATEIX name per cada Radio, sino no desmarca quan marquem una altra -->
+        <!-- <input type="radio" id="radSuma" name="radSuma" value="+">
         <label for="male">Suma</label><br>
         <input type="radio" id="radResta" name="radResta" value="-">
         <label for="radResta">Resta</label><br>
         <input type="radio" id="radMulti" name="radMulti" value="*">
         <label for="radMulti">Multiplica</label><br>
         <input type="radio" id="radDivi" name="radDivi" value="/">
+        <label for="radDivi">Divideix</label> -->
+
+        <input type="radio" id="radSuma" name="operador" value="+">
+        <label for="male">Suma</label><br>
+        <input type="radio" id="radResta" name="operador" value="-">
+        <label for="radResta">Resta</label><br>
+        <input type="radio" id="radMulti" name="operador" value="*">
+        <label for="radMulti">Multiplica</label><br>
+        <input type="radio" id="radDivi" name="operador" value="/">
         <label for="radDivi">Divideix</label>
         <br><br>
     </div>
-    <p>Nivell 2 - hi afegim Operador de Dividir (controlant el divisor per 0).</p>    
+    <p>Nivell 2 - hi hem afegit Operador de Dividir (controlant el divisor per 0).</p>    
     <br>
     <br>
-    <p>Nivell 3 - hi afegim entorn gràfic - disseny lliure.</p>    
-    <br>
+    <p>Nivell 3 - hi afegirem entorn gràfic - disseny lliure.</p>    
+    <p> ... farem projecte separat, veure Exercici-8-b en Repositori.</p>    
     <br>    
+    <br>
     <p id="mostrarDatos"></p> 
     <!-- lloc del HTML on es mostraran les dades resultants des de JavaScript ES06 amb .innerHTML  -->
     <br>

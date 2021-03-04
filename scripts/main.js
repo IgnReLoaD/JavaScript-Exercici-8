@@ -34,6 +34,7 @@ function calcular(){
 	} else alert ("marcar alguna operacio");
 	
 	let result = "<br>El resultat es: " + operacio + ". <br>";	
+    console.log(result);    
 	document.getElementById("mostrarDatos").innerHTML = result;
 	
 // ampliacio - ocultem el botó executar i mostrem el botó per tornar a jugar
