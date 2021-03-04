@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- ENUNCIATS:    
+
+    Exercici-1: Mostrar per Consola "Hola mundo"                           --- > JA FET
+    Exercici-2: Crear un Alert per mostrar el nom                          --- > JA FET
+    Exercici-3: Crear una variable pel nom i una pel cognom                --- > JA FET
+    Exercici-4: Crear dues variables amb dos números i fer la suma         --- > JA FET
+    Exercici-5: Crear variable 'nota_examen' i mostrar alert Aprovat o no  --- > JA FET     
+    Exercici-6: Reemplaçar paraules/lletres (blau per verd / o per u)      --- > JA FET
+    Exercici-7: Llistats, mostrar per pantalla cada element i la posició   --- > JA FET
+
+    ... Exercici-8:  Calculadora                                                    -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author"      content="Ignasi Ortiz">
+    <meta name="keywords"    content="JavaScript learning arrays functions bucles">
+    <meta name="description" content="IT Academy - modul 7 JavaScript"> 
+
+    <!-- aquí llegirem fitxer per aplicar estils -->
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <title>JavaScript ex.8</title>
+</head>
+
+<body>
+    <h1>IT Academy - exercici 8 (calculadora) de JS</h1>
+    <p>Nivell 1:</p>    
+    <div class="tooltip">Entrar 2 valors, i tambe la operacio desitjada.
+        <span class="tooltiptext">suma, resta, multi, divi</span>
+    </div> 
+    <br>
+    <br>
+    <div id=form>
+        <label for="spnPrimer">Seleccina un numero (entre 0 i 99):</label>
+        <input type="number" id="spnPrimer" name="spnPrimer" min="0" max="99">
+        <br><br>
+        <label for="spnSegon">Seleccina un numero (entre 0 i 99):</label>
+        <input type="number" id="spnSegon" name="spnSegon" min="0" max="99">
+        <br><br>
+        <!-- RADIO BUTTONS -->
+        <input type="radio" id="radSuma" name="radSuma" value="+">
+        <label for="male">Suma</label><br>
+        <input type="radio" id="radResta" name="radResta" value="-">
+        <label for="radResta">Resta</label><br>
+        <input type="radio" id="radMulti" name="radMulti" value="*">
+        <label for="radMulti">Multiplica</label><br>
+        <input type="radio" id="radDivi" name="radDivi" value="/">
+        <label for="radDivi">Divideix</label>
+        <br><br>
+    </div>
+    <p>Nivell 2 - hi afegim Operador de Dividir (controlant el divisor per 0).</p>    
+    <br>
+    <br>
+    <p>Nivell 3 - hi afegim entorn gràfic - disseny lliure.</p>    
+    <br>
+    <br>    
+    <p id="mostrarDatos"></p> 
+    <!-- lloc del HTML on es mostraran les dades resultants des de JavaScript ES06 amb .innerHTML  -->
+    <br>
+    <input type='button' class='button' id="calcular" value='8._ Calcular' onClick='calcular()'/> 
+    <!-- crida al JS -->
+    <!-- <input type='button' class='button' id="actualitzar" value='Tornar a jugar' onclick='location.reload()' />   -->
+    <input type='button' class='button' id="actualitzar" value='Tornar a jugar' onclick='actualizar()' />  
+    <!-- crida al JS -->
+     
+    <script src="scripts/main.js" type="text/javascript"></script>
+    <!-- referencia al fitxer JS - recomanable definir al final just abans del body 
+    perquè sino no coneix encara el HTML i no sap on trobar les ubicacions dins la pagina -->
+</body>
+</html>
